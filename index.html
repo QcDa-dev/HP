@@ -55,13 +55,11 @@
                     Quest for Creative<br>Development & Applications
                 </h1>
                 <p class="mt-4 text-lg md:text-xl text-gray-600">
-                    <br>日常の「ちょっと不便」を解決するウェブアプリを制作しています。
+                    日常の「ちょっと不便」を解決するウェブアプリを制作しています。
                 </p>
-                <!--
                 <a href="#apps" class="mt-8 inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">
                     アプリを見る
                 </a>
-                -->
             </div>
         </section>
 
@@ -71,7 +69,7 @@
                 <h2 class="text-3xl font-bold mb-4 text-gray-900">QcDa Projectについて</h2>
                 <div class="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
                 <p class="max-w-3xl mx-auto text-gray-600 leading-relaxed">
-                    QcDa [クシダ] Projectは、日常のささいな課題を解決し、あなたの生活を少しだけ便利にすることを目指すプロジェクトです。シンプルで直感的に使えるツールを通じて、より快適な毎日を提供します。
+                    QcDa Project (クシダプロジェクト) は、日常のささいな課題を解決し、あなたの生活を少しだけ便利にすることを目指すプロジェクトです。シンプルで直感的に使えるツールを通じて、より快適な毎日を提供します。
                 </p>
             </div>
         </section>
@@ -84,7 +82,7 @@
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
                     
-                    <!-- EveKulu -->
+                    <!-- EveKuru -->
                     <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
                         <div class="p-8 flex-grow">
                             <div class="flex items-center mb-4">
@@ -161,7 +159,7 @@
                     QcDa Projectのアプリ利用に関するお申し込み、その他ご質問やご相談は、以下のGoogleフォームまたはメールアドレスまでお気軽にご連絡ください。
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlvIr5ehyy3dInl_XTkA5F64H7yFIigL2dzFW0IoXnl8ajdw/viewform?usp=dialog" class="w-full sm:w-auto bg-green-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition duration-300">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlvIr5ehyy3dInl_XTkA5F64H7yFIigL2dzFW0IoXnl8ajdw/viewform?usp=sharing&ouid=103863843545359943443" target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto bg-green-500 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-green-600 transition duration-300">
                         Googleフォーム
                     </a>
                     <a href="mailto:qcda.app@gmail.com" class="w-full sm:w-auto bg-gray-700 text-white font-bold py-3 px-6 rounded-lg shadow-md hover:bg-gray-800 transition duration-300">
@@ -176,7 +174,7 @@
     <footer class="bg-gray-800 text-white">
         <div class="container mx-auto px-6 py-8 text-center">
             <p class="text-lg font-semibold">QcDa Project - Quest for Creative Development & Applications</p>
-            <p class="mt-2 text-sm text-gray-400">&copy; 2025 QcDa. All Rights Reserved.</p>
+            <p class="mt-2 text-sm text-gray-400">&copy; 2025 QcDa Project. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -189,11 +187,9 @@
             mobileMenu.classList.toggle('hidden');
         });
 
-        // メニュー内のリンクをクリックしたときにメニューを閉じる
         const mobileMenuLinks = mobileMenu.querySelectorAll('a');
         mobileMenuLinks.forEach(link => {
             link.addEventListener('click', () => {
-                // スムーズスクロールを邪魔しないように少し遅延させる
                 setTimeout(() => {
                     mobileMenu.classList.add('hidden');
                 }, 150);
