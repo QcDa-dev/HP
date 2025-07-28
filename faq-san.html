@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>よくある質問・相談さん - 詳細 | QcDa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+        .step-card { @apply bg-white p-6 rounded-xl shadow-md border border-gray-200; }
+        .step-number { @apply flex-shrink-0 bg-teal-500 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-900">
+                &larr; QcDa トップへ戻る
+            </a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        <!-- アプリ概要 -->
+        <section class="text-center mb-16">
+            <div class="inline-block p-4 bg-teal-100 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.546-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+            </div>
+            <h1 class="text-4xl font-bold text-gray-900">よくある質問・相談さん</h1>
+            <p class="mt-2 text-lg text-gray-600">誰でも簡単作成・管理。タグで探せるFAQシステム</p>
+        </section>
+
+        <!-- 特徴 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-center mb-8">特徴</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">簡単な作成・管理</h3>
+                    <p class="text-sm text-gray-600">質問と回答はGoogleスプレッドシートに入力するだけ。専門知識は不要です。</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">強力なタグ機能</h3>
+                    <p class="text-sm text-gray-600">各質問にタグを付けられるため、ユーザーは目的の情報を素早く見つけられます。</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">シンプルな質問投稿</h3>
+                    <p class="text-sm text-gray-600">ユーザーからの新たな質問も簡単に受け付けられます。投稿された質問は管理者が回答し、共有します。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 使い方ガイド -->
+        <section>
+            <h2 class="text-2xl font-bold text-center mb-8">使い方ガイド</h2>
+            <div class="max-w-2xl mx-auto space-y-6">
+                <div class="step-card flex items-start space-x-4">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h4 class="font-bold">ログイン</h4>
+                        <p class="text-sm text-gray-600">指定されたURLからアプリを開き、共有されたパスワードを入力してログインします。</p>
+                    </div>
+                </div>
+                <div class="step-card flex items-start space-x-4">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h4 class="font-bold">質問を探す</h4>
+                        <p class="text-sm text-gray-600">「タグを選択」から探したいカテゴリを選び、「表示」をタップすると、関連する質問と回答が表示されます。タグを指定しない場合は、全ての質問が表示されます。</p>
+                    </div>
+                </div>
+                <div class="step-card flex items-start space-x-4">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h4 class="font-bold">新しく質問する</h4>
+                        <p class="text-sm text-gray-600">探している回答が見つからない場合は、「質問・相談の投稿」をタップします。タグを選択し、質問内容を入力して送信してください。管理者が回答後、アプリに反映されます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 QcDa. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
