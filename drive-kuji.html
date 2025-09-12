@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドライブくじ - 簡単座席決めアプリ | QcDa Project</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="「ドライブくじ」は、ドライブや旅行の際の面倒な座席決めを、簡単かつ公平に行うためのWebアプリです。人数と名前を入力するだけで、誰がどこに座るかをランダムに決定します。">
+    <meta name="keywords" content="ドライブくじ, 座席決め, ドライブ, 旅行, くじ引き, ランダム, アプリ, QcDa Project">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://qcda-dev.github.io/HP/drive-kuji.html">
+    <meta property="og:title" content="ドライブくじ - 簡単座席決めアプリ | QcDa Project">
+    <meta property="og:description" content="ドライブや旅行の際の面倒な座席決めを、簡単かつ公平に行うためのWebアプリです。">
+    <meta property="og:image" content="https://qcda-dev.github.io/HP/og-image-drivekuji.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://qcda-dev.github.io/HP/drive-kuji.html">
+    <meta property="twitter:title" content="ドライブくじ - 簡単座席決めアプリ | QcDa Project">
+    <meta property="twitter:description" content="ドライブや旅行の際の面倒な座席決めを、簡単かつ公平に行うためのWebアプリです。">
+    <meta property="twitter:image" content="https://qcda-dev.github.io/HP/og-image-drivekuji.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+        .step-card { @apply bg-white p-6 rounded-xl shadow-md border border-gray-200; }
+        .step-number { @apply flex-shrink-0 bg-red-500 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-900">
+                &larr; QcDa Project トップへ戻る
+            </a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        <!-- アプリ概要 -->
+        <section class="text-center mb-16">
+            <div class="inline-block p-4 bg-red-100 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 18L12 18" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 6L12 6" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L6 12" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M18 12L18 12" />
+                </svg>
+            </div>
+            <h1 class="text-4xl font-bold text-gray-900">ドライブくじ</h1>
+            <p class="mt-2 text-lg text-gray-600">ドライブや旅行の座席決めを、簡単・公平に。</p>
+             <!-- アプリへのリンクボタン -->
+            <div class="mt-8">
+                <a href="https://qcda-dev.github.io/drive-lottery/" target="_blank" rel="noopener noreferrer" class="inline-block bg-red-500 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-red-600 transition-transform transform hover:scale-105 duration-300">
+                    アプリを使ってみる
+                </a>
+            </div>
+        </section>
+
+        <!-- 特徴 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-center mb-8">特徴</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">シンプル操作</h3>
+                    <p class="text-sm text-gray-600">座席数と人数、名前を入力するだけ。誰でも直感的に使えます。</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">運転手も考慮</h3>
+                    <p class="text-sm text-gray-600">運転手を指定すれば、その人は運転席に固定。残りのメンバーで公平にくじ引きします。</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">楽しい結果表示</h3>
+                    <p class="text-sm text-gray-600">車の座席図で、誰がどこに座るかが一目でわかります。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 使い方ガイド -->
+        <section>
+            <h2 class="text-2xl font-bold text-center mb-8">使い方ガイド</h2>
+            <div class="max-w-2xl mx-auto space-y-6">
+                <div class="step-card flex items-start space-x-4">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h4 class="font-bold">座席数と人数を設定</h4>
+                        <p class="text-sm text-gray-600">まず、車にある座席の数と、乗車する人数をそれぞれ入力します。「+」と「-」ボタンで簡単に数を変更できます。</p>
+                    </div>
+                </div>
+                <div class="step-card flex items-start space-x-4">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h4 class="font-bold">名前の入力と運転手の選択</h4>
+                        <p class="text-sm text-gray-600">設定した人数分の入力欄が表示されるので、参加者の名前を入力します。運転する人が決まっている場合は、名前の右側にあるチェックボックスにチェックを入れてください。</p>
+                    </div>
+                </div>
+                <div class="step-card flex items-start space-x-4">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h4 class="font-bold">くじを開始！</h4>
+                        <p class="text-sm text-gray-600">全員の名前を入力し、運転手を設定したら、「くじ開始」ボタンをタップ！アプリが自動で座席を抽選します。</p>
+                    </div>
+                </div>
+                <div class="step-card flex items-start space-x-4">
+                    <div class="step-number">4</div>
+                    <div>
+                        <h4 class="font-bold">結果の確認</h4>
+                        <p class="text-sm text-gray-600">車の座席図と共に、抽選結果が表示されます。運転手に指定された人は、自動的に運転席に配置されます。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <p>&copy; 2025 QcDa Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "ドライブくじ",
+      "applicationCategory": "Utilities",
+      "operatingSystem": "Web",
+      "description": "「ドライブくじ」は、ドライブや旅行の際の面倒な座席決めを、簡単かつ公平に行うためのWebアプリです。",
+      "author": {
+        "@type": "Organization",
+        "name": "QcDa Project"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      }
+    }
+    </script>
+
+</body>
+</html>
+
