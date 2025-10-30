@@ -3,25 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QcDa Project - 日常を便利にするウェブアプリ開発</title>
+    <title>利用規約 | QcDa Project</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="QcDa Projectは、日常のちょっとした課題を解決し、生活を少しだけ便利にするためのウェブアプリを制作・公開しているプロジェクトです。">
-    <meta name="keywords" content="QcDa, ウェブアプリ, 業務効率化, イベント管理, FAQ, 割り勘, 就活, ドライブくじ">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://qcda-dev.github.io/HP/">
-    <meta property="og:title" content="QcDa Project - 日常を便利にするウェブアプリ開発">
-    <meta property="og:description" content="日常のちょっとした課題を解決し、生活を少しだけ便利にするためのウェブアプリを制作・公開しているプロジェクトです。">
-    <meta property="og:image" content="https://qcda-dev.github.io/HP/og-image.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://qcda-dev.github.io/HP/">
-    <meta property="twitter:title" content="QcDa Project - 日常を便利にするウェブアプリ開発">
-    <meta property="twitter:description" content="日常のちょっとした課題を解決し、生活を少しだけ便利にするためのウェブアプリを制作・公開しているプロジェクトです。">
-    <meta property="twitter:image" content="https://qcda-dev.github.io/HP/og-image.png">
+    <meta name="robots" content="noindex, nofollow"> <!-- 通常、利用規約ページは検索対象外とすることが多いため -->
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,217 +14,155 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+        .terms-content { @apply max-w-4xl mx-auto bg-white p-8 md:p-12 rounded-lg shadow-md; }
+        .terms-content h1 { @apply text-3xl font-bold text-gray-900 mb-8 pb-2 border-b; }
+        .terms-content h2 { @apply text-2xl font-bold text-gray-800 mt-10 mb-4 pb-1 border-b; }
+        .terms-content h3 { @apply text-xl font-semibold text-gray-800 mt-6 mb-3; }
+        .terms-content h4 { @apply text-lg font-semibold text-gray-700 mt-6 mb-2; }
+        .terms-content p, .terms-content li { @apply text-gray-700 leading-relaxed; }
+        .terms-content ol { @apply list-decimal list-inside space-y-2 pl-4; }
+        .terms-content ul { @apply list-disc list-inside space-y-2 pl-4; }
+        .terms-content strong { @apply font-bold text-gray-900; }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header -->
     <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
         <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <a href="#hero" class="text-2xl font-bold text-gray-900">QcDa Project</a>
-            <div class="hidden md:flex space-x-8 items-center">
-                <a href="#about" class="text-gray-600 hover:text-blue-600 transition">QcDaについて</a>
-                <a href="#apps" class="text-gray-600 hover:text-blue-600 transition">公開アプリ</a>
-                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">お問い合わせ</a>
-            </div>
-            <!-- Mobile Menu Button -->
-            <div class="md:hidden">
-                <button id="menu-btn" type="button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
-                    </svg>
-                </button>
-            </div>
+            <a href="index.html" target="_top" class="text-xl font-bold text-gray-900">
+                &larr; QcDa Project トップへ戻る
+            </a>
         </nav>
-        <!-- Mobile Menu -->
-        <div id="mobile-menu" class="hidden md:hidden">
-            <a href="#about" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">QcDaについて</a>
-            <a href="#apps" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">公開アプリ</a>
-            <a href="#contact" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">お問い合わせ</a>
-        </div>
     </header>
 
-    <main>
-        <!-- Hero -->
-        <section id="hero" class="bg-white">
-            <div class="container mx-auto px-6 py-24 text-center">
-                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">日常の「ちょっと不便」を、<br class="md:hidden"><span class="text-blue-600">アプリ</span>で解決。</h1>
-                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">QcDa Projectは、あなたの毎日を少しだけ便利にするためのウェブアプリを企画・開発しています。</p>
-                <a href="#apps" class="mt-8 inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">アプリ一覧を見る</a>
-            </div>
-        </section>
+    <main class="container mx-auto px-6 py-16">
+        <div class="terms-content">
+            <h1>QcDa Project 利用規約</h1>
 
-        <!-- QcDaについて -->
-        <section id="about" class="py-20">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">QcDa Projectについて</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto mb-12"></div>
-                <div class="max-w-4xl mx-auto text-center">
-                    <p class="text-lg text-gray-700 mb-4">
-                        正式名称は、<strong class="font-semibold">"Quest for Creative Development & Applications"</strong>。<br>
-                        私たちのミッションは、日常に潜むささいな課題を見つけ出し、シンプルで直感的に使えるウェブアプリを通じて、より快適な生活を提供することです。
-                    </p>
-                    <p class="text-gray-600">
-                        イベント運営の効率化から、友人との割り勘計算まで。幅広いシーンで「あったらいいな」を形にしています。
-                    </p>
-                </div>
-            </div>
-        </section>
+            <section>
+                <h2>第1章 総則</h2>
 
-        <!-- 公開アプリ -->
-        <section id="apps" class="py-20 bg-gray-100">
-            <div class="container mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">公開中のアプリ</h2>
-                <div class="w-24 h-1 bg-blue-600 mx-auto mb-12"></div>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    
-                    <!-- EveKuru -->
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <div class="p-8 flex-grow">
-                            <div class="flex items-center mb-4">
-                                <div class="p-3 bg-green-100 rounded-full mr-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
-                                </div>
-                                <h3 class="text-2xl font-bold text-gray-900">EveKuru [イベクル]</h3>
-                            </div>
-                            <p class="text-gray-600 mb-4">イベント運営をスマートにするQRコード会員証発行アプリ。参加者管理の手間を大幅に削減します。</p>
-                        </div>
-                        <div class="p-6 bg-gray-50">
-                            <a href="evekuru.html" class="font-bold text-green-500 hover:text-green-700 transition duration-300">詳細はこちら &rarr;</a>
-                        </div>
-                    </div>
+                <h3>第1条（本規約の適用）</h3>
+                <ol>
+                    <li>本利用規約（以下「本規約」という）は、QcDa Project（以下「当プロジェクト」という）が提供する全てのウェブアプリケーション、サービス、およびそれに関連する一切のサービス（以下、総称して「本サービス」という）の利用に関する条件を、本サービスを利用する全ての利用者（以下「利用者」という）と当プロジェクトとの間で定めるものです。</li>
+                    <li>利用者は、本サービスを利用する前に本規約を全て確認し、その内容に同意するものとします。</li>
+                    <li>本サービスの利用を開始した時点で、利用者は本規約に有効かつ取消不能な同意をしたものとみなされます。</li>
+                </ol>
 
-                    <!-- よくある質問・相談さん -->
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <div class="p-8 flex-grow">
-                            <div class="flex items-center mb-4">
-                                <div class="p-3 bg-teal-100 rounded-full mr-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                                </div>
-                                <h3 class="text-2xl font-bold text-gray-900">よくある質問・相談さん</h3>
-                            </div>
-                            <p class="text-gray-600 mb-4">誰でも簡単に作成・管理ができるFAQシステム。タグ機能で情報の整理も簡単です。</p>
-                        </div>
-                        <div class="p-6 bg-gray-50">
-                            <a href="faq-san.html" class="font-bold text-teal-500 hover:text-teal-700 transition duration-300">詳細はこちら &rarr;</a>
-                        </div>
-                    </div>
+                <h3>第2条（本規約の変更）</h3>
+                <ol>
+                    <li>当プロジェクトは、法令の改正、本サービスの変更またはその他の必要性に応じて、利用者の事前の承諾を得ることなく、いつでも本規約を変更できるものとします。</li>
+                    <li>本規約を変更する場合、当プロジェクトは、変更後の規約を当プロジェクトのウェブサイト上に掲載、または本サービス内の適切な箇所に表示することで利用者に通知するものとし、当該通知をもって変更後の規約は効力を生じるものとします。</li>
+                    <li>利用者が本規約の変更後も本サービスの利用を継続した場合、変更後の本規約に同意したものとみなされます。</li>
+                </ol>
 
-                    <!-- 就活しぇありんく -->
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <div class="p-8 flex-grow">
-                            <div class="flex items-center mb-4">
-                                <div class="p-3 bg-indigo-100 rounded-full mr-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-                                </div>
-                                <h3 class="text-2xl font-bold text-gray-900">就活しぇありんく</h3>
-                            </div>
-                            <p class="text-gray-600 mb-4">就活生同士がリアルな企業情報を共有できるプラットフォーム。みんなで協力して就活を乗り切りましょう。</p>
-                        </div>
-                        <div class="p-6 bg-gray-50">
-                            <a href="sharelink.html" class="font-bold text-indigo-500 hover:text-indigo-700 transition duration-300">詳細はこちら &rarr;</a>
-                        </div>
-                    </div>
+                <h3>第3条（定義）</h3>
+                <p>本規約において、次の各号に掲げる用語の意義は、当該各号に定めるところによるものとします。</p>
+                <ol>
+                    <li><strong>「本サービス」</strong>：当プロジェクトが提供する「EveKuru [イベクル]」、「よくある質問・相談さん」、「就活しぇありんく」、「わりっぱ」、「ドライブくじ」、「6号館 空き教室検索」等、および将来提供される一切のウェブアプリケーションおよび関連サービスを指します。</li>
+                    <li><strong>「利用者」</strong>：本サービスを利用する個人または法人を指します。</li>
+                    <li><strong>「ユーザーコンテンツ」</strong>：利用者が本サービスにアップロード、投稿、または送信した全ての情報（テキスト、画像、データ、名前、質問内容など）を指します。</li>
+                </ol>
+            </section>
 
-                    <!-- わりっぱ -->
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <div class="p-8 flex-grow">
-                            <div class="flex items-center mb-4">
-                                <div class="p-3 bg-orange-100 rounded-full mr-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
-                                </div>
-                                <h3 class="text-2xl font-bold text-gray-900">わりっぱ</h3>
-                            </div>
-                            <p class="text-gray-600 mb-4">飲み会などで面倒な割り勘計算をストレスなく行えるアプリ。飲んだ量に応じた公平な計算も可能です。</p>
-                        </div>
-                        <div class="p-6 bg-gray-50">
-                            <a href="warippa.html" class="font-bold text-orange-500 hover:text-orange-700 transition duration-300">詳細はこちら &rarr;</a>
-                        </div>
-                    </div>
+            <section>
+                <h2>第2章 本サービスの利用</h2>
 
-                    <!-- ドライブくじ -->
-                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-                        <div class="p-8 flex-grow">
-                            <div class="flex items-center mb-4">
-                                <div class="p-3 bg-red-100 rounded-full mr-4">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18L12 18" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6L12 6" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L6 12" />
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 12L18 12" />
-                                    </svg>
-                                </div>
-                                <h3 class="text-2xl font-bold text-gray-900">ドライブくじ</h3>
-                            </div>
-                            <p class="text-gray-600 mb-4">ドライブや旅行の際の面倒な座席決めを、簡単かつ公平に行うためのWebアプリです。</p>
-                        </div>
-                        <div class="p-6 bg-gray-50">
-                            <a href="drive-kuji.html" class="font-bold text-red-500 hover:text-red-700 transition duration-300">詳細はこちら &rarr;</a>
-                        </div>
-                    </div>
+                <h3>第4条（利用者の責任）</h3>
+                <ol>
+                    <li>利用者は、本規約、関連法令、および当プロジェクトが別途定めるガイドラインを遵守し、自己の費用と責任において本サービスを利用するものとします。</li>
+                    <li>利用者は、本サービスの利用にあたり、自己の行為、およびその結果について一切の責任を負うものとします。</li>
+                </ol>
 
-                </div>
-            </div>
-        </section>
+                <h3>第5条（アカウント管理）</h3>
+                <ol>
+                    <li>一部の本サービス（例：「就活しぇありんく」、「EveKuru」）では、Googleアカウント等の外部サービス連携を通じた認証を求める場合があります。利用者は、自己の責任においてアカウント情報を厳重に管理するものとします。</li>
+                    <li>アカウント情報が第三者に利用されたことによって生じた損害について、当プロジェクトに故意または重大な過失がある場合を除き、当プロジェクトは一切の責任を負いません。</li>
+                </ol>
 
-        <!-- お問い合わせ -->
-        <section id="contact" class="py-20">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold mb-4 text-gray-900">お問い合わせ</h2>
-                <p class="text-gray-700 max-w-2xl mx-auto mb-8">
-                    QcDa Projectのアプリ利用に関するお申し込み、その他ご質問やご相談は、以下のGoogleフォームまたはメールアドレスまでお気軽にご連絡ください。
+                <h3>第6条（ユーザーコンテンツの取り扱い）</h3>
+                <ol>
+                    <li>ユーザーコンテンツに関する著作権、その他一切の権利は、当該コンテンツを作成した利用者または正当な権利者に帰属します。</li>
+                    <li>利用者は、当プロジェクトに対し、本サービスの運営、プロモーション、改善に必要な範囲内で、ユーザーコンテンツを無償で利用（複製、公衆送信、翻案等を含む）する非独占的なライセンスを許諾するものとします。</li>
+                    <li>当プロジェクトは、本サービスの運営上必要と判断した場合、利用者に事前に通知することなく、ユーザーコンテンツを削除、非公開化、または編集できるものとします。</li>
+                </ol>
+
+                <h3>第7条（禁止事項）</h3>
+                <p>利用者は、本サービスの利用にあたり、以下の行為を行ってはならないものとします。</p>
+                <ol>
+                    <li>法令または公序良俗に違反する行為。</li>
+                    <li>当プロジェクトまたは第三者の著作権、商標権、その他の知的財産権を侵害する行為。</li>
+                    <li>当プロジェクトまたは第三者の財産、プライバシー、名誉、信用等を侵害する行為。</li>
+                    <li>虚偽の情報を登録または投稿する行為（特に「就活しぇありんく」における虚偽の企業情報投稿など）。</li>
+                    <li>本サービスを構成するプログラム、ソフトウェア、サーバー等に対し、リバースエンジニアリング、逆アセンブル、またはその他解析を試みる行為。</li>
+                    <li>本サービスの運営を妨害する行為、またはその恐れのある行為。</li>
+                    <li>当プロジェクトが事前に許可しない、本サービスを利用した営利活動、広告、勧誘行為。</li>
+                    <li>その他、当プロジェクトが不適切と判断する行為。</li>
+                </ol>
+            </section>
+
+            <section>
+                <h2>第3章 免責事項および権利帰属</h2>
+
+                <h3>第8条（免責事項）</h3>
+                <ol>
+                    <li><strong>本サービスの提供形態について</strong>：本サービスは、現状有姿（AS IS）で提供されるものであり、当プロジェクトは、本サービスの完全性、正確性、特定の目的への適合性、有用性、および継続性について、いかなる保証も行いません。</li>
+                    <li><strong>外部サービスとの連携</strong>：本サービスは、Google Apps Script (GAS)、Googleスプレッドシート、Firebase、GitHub Pages等の<strong>外部サービスに大きく依存</strong>して提供されています。これらの外部サービスの仕様変更、サービス停止、不具合等により、本サービスの全部または一部が利用できなくなった場合でも、当プロジェクトは一切の責任を負いません。</li>
+                    <li><strong>データ消失</strong>：当プロジェクトは、本サービスの利用に伴うデータ消失、破損等について、復旧義務および一切の責任を負いません。</li>
+                    <li><strong>計算結果の正確性</strong>：「わりっぱ」、「ドライブくじ」などのアプリが提供する計算結果や抽選結果の正確性、公平性について、当プロジェクトは保証せず、これらに基づく利用者間のトラブルについて責任を負いません。</li>
+                    <li><strong>情報の内容</strong>：「就活しぇありんく」や「よくある質問・相談さん」に投稿されたユーザーコンテンツは、当プロジェクトの意見または見解を示すものではなく、その内容の信頼性、正確性、有用性について当プロジェクトは一切の責任を負いません。</li>
+                    <li><strong>損害賠償</strong>：当プロジェクトは、本サービスの利用により利用者に生じたあらゆる損害について、当プロジェクトに故意または重大な過失がある場合を除き、一切の責任を負いません。また、損害賠償責任を負う場合でも、賠償額は利用者が過去1ヶ月間に当プロジェクトに支払った対価の総額を上限とします（本サービスは原則無償提供のため、実質的な賠償額は零円となることを含む）。</li>
+                </ol>
+
+                <h3>第9条（知的財産権）</h3>
+                <p>本サービスを構成する全ての情報、デザイン、ロゴ、ソフトウェア等（ユーザーコンテンツを除く）に関する知的財産権およびその他一切の権利は、当プロジェクトまたは当プロジェクトにライセンスを許諾している第三者に帰属します。</p>
+            </section>
+
+            <section>
+                <h2>第4章 サービスの停止・終了等</h2>
+
+                <h3>第10条（本サービスの停止）</h3>
+                <p>当プロジェクトは、以下のいずれかの事由があると判断した場合、利用者に事前に通知することなく、本サービスの全部または一部の提供を停止または中断できるものとします。</p>
+                <ol>
+                    <li>本サービスに係るコンピュータシステムの保守点検または更新を行う場合。</li>
+                    <li>地震、落雷、火災、停電または天災などの不可抗力により、本サービスの提供が困難となった場合。</li>
+                    <li>利用している外部サービス（Googleサービス等）が停止または終了した場合。</li>
+                    <li>その他、当プロジェクトが本サービスの提供が困難と判断した場合。</li>
+                </ol>
+
+                <h3>第11条（本サービスの終了）</h3>
+                <p>当プロジェクトは、任意の理由により、30日間の予告期間をもって本サービスの提供を終了できるものとします。</p>
+            </section>
+
+            <section>
+                <h2>第5章 その他</h2>
+
+                <h3>第12条（準拠法および管轄裁判所）</h3>
+                <ol>
+                    <li>本規約の解釈にあたっては、日本法を準拠法とします。</li>
+                    <li>本サービスに関して紛争が生じた場合には、当プロジェクトの所在地を管轄する裁判所を専属的合意管轄とします。</li>
+                </ol>
+            </section>
+
+            <section class="mt-12 pt-6 border-t border-gray-200">
+                <h4 class="text-md font-semibold text-gray-700 mb-2">附則</h4>
+                <p class="text-sm text-gray-600">
+                    2025年10月30日 制定<br>
+                    © 2025 QcDa Project. All Rights Reserved.
                 </p>
-                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlvIr5ehyy3dInl_XTkA5F64H7yFIigL2dzFW0IoXnl8ajdw/viewform?usp=sharing&ouid=103863843545359943443" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">
-                        お問い合わせフォーム
-                    </a>
-                    <p class="text-gray-600">または qcda.app@gmail.com</p>
-                </div>
-            </div>
-        </section>
+            </section>
+
+        </div>
     </main>
 
-    <footer class="bg-gray-800 text-white">
-        <!-- ===== フッター修正箇所 ===== -->
+    <footer class="bg-gray-800 text-white mt-16">
         <div class="container mx-auto px-6 py-8 text-center">
-            <a href="terms-of-service.html" class="text-gray-400 hover:text-white hover:underline text-sm mb-4 block">利用規約</a>
+            <!-- このページ自体が利用規約なので、フッターのリンクは削除またはトップへのリンクに変更しても良いですが、統一性のために残します -->
+            <a href="terms-of-service.html" target="_top" class="text-gray-400 hover:text-white hover:underline text-sm mb-4 block">利用規約</a>
             <p class="text-gray-500 text-sm">&copy; 2025 QcDa Project. All Rights Reserved.</p>
         </div>
-        <!-- ===== 修正ここまで ===== -->
     </footer>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuBtn = document.getElementById('menu-btn');
-            const mobileMenu = document.getElementById('mobile-menu');
-            
-            menuBtn.addEventListener('click', function () {
-                mobileMenu.classList.toggle('hidden');
-            });
-
-            // メニュー内のリンクをクリックしたときにメニューを閉じる
-            const menuLinks = mobileMenu.getElementsByTagName('a');
-            for (let i = 0; i < menuLinks.length; i++) {
-                menuLinks[i].addEventListener('click', function() {
-                    mobileMenu.classList.add('hidden');
-                });
-            }
-        });
-    </script>
-    
-    <!-- JSON-LD for SEO -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "QcDa Project",
-      "url": "https://qcda-dev.github.io/HP/",
-      "logo": "https://qcda-dev.github.io/HP/logo.png",
-      "description": "QcDa Projectは、日常のちょっとした課題を解決し、生活を少しだけ便利にするためのウェブアプリを制作・公開しているプロジェクトです。"
-    }
-    </script>
 
 </body>
 </html>
+
