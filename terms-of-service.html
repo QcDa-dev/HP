@@ -6,7 +6,7 @@
     <title>利用規約 | QcDa Project</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="robots" content="noindex, nofollow"> <!-- 通常、利用規約ページは検索対象外とすることが多いため -->
+    <meta name="robots" content="noindex, nofollow">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,10 +14,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
     
     <!-- ===== 修正箇所 ===== -->
+    <!-- スタイル指定をTailwindクラスに移行するため、<style>ブロック内の詳細定義を削除 -->
     <style>
         body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
         
-        /* @apply をプレーンCSSに展開 */
+        /* 基本的なコンテナスタイル */
         .terms-content {
             max-width: 56rem; /* max-w-4xl */
             margin-left: auto;
@@ -32,70 +33,15 @@
                 padding: 3rem; /* md:p-12 */
             }
         }
-        .terms-content h1 {
-            font-size: 1.875rem; /* text-3xl */
-            line-height: 2.25rem;
-            font-weight: 700; /* font-bold */
-            color: #1f2937; /* text-gray-900 */
-            margin-bottom: 2rem; /* mb-8 */
-            padding-bottom: 0.5rem; /* pb-2 */
-            border-bottom-width: 1px; /* border-b */
-            border-color: #e5e7eb; /* border-gray-200 */
-        }
-        .terms-content h2 {
-            font-size: 1.5rem; /* text-2xl */
-            line-height: 2rem;
-            font-weight: 700; /* font-bold */
-            color: #1f2937; /* text-gray-800 */
-            margin-top: 2.5rem; /* mt-10 */
-            margin-bottom: 1rem; /* mb-4 */
-            padding-bottom: 0.25rem; /* pb-1 */
-            border-bottom-width: 1px; /* border-b */
-            border-color: #e5e7eb; /* border-gray-200 */
-        }
-        .terms-content h3 {
-            font-size: 1.25rem; /* text-xl */
-            line-height: 1.75rem;
-            font-weight: 600; /* font-semibold */
-            color: #1f2937; /* text-gray-800 */
-            margin-top: 1.5rem; /* mt-6 */
-            margin-bottom: 0.75rem; /* mb-3 */
-        }
-        .terms-content h4 {
-            font-size: 1.125rem; /* text-lg */
-            line-height: 1.75rem;
-            font-weight: 600; /* font-semibold */
-            color: #374151; /* text-gray-700 */
-            margin-top: 1.5rem; /* mt-6 */
-            margin-bottom: 0.5rem; /* mb-2 */
-        }
+        /* p と li のマージン（改行）を強制 */
         .terms-content p, .terms-content li {
-            color: #374151; /* text-gray-700 */
-            line-height: 1.625; /* leading-relaxed */
-            margin-bottom: 0.75rem; /* 可読性のためにマージン追加 */
+             margin-bottom: 0.75rem;
+             line-height: 1.625;
         }
-        .terms-content ol {
-            list-style-type: decimal; /* list-decimal */
-            list-style-position: inside; /* list-inside */
-            padding-left: 1rem; /* pl-4 */
-        }
-        .terms-content ul {
-            list-style-type: disc; /* list-disc */
-            list-style-position: inside; /* list-inside */
-            padding-left: 1rem; /* pl-4 */
-        }
-        .terms-content ol > li, .terms-content ul > li {
-             margin-bottom: 0.5rem; /* space-y-2 の代わり */
-        }
-        .terms-content ol > li ol {
-            margin-top: 0.5rem; /* ネストされたリストのマージン */
-        }
+        /* strong タグのスタイルを強制 */
         .terms-content strong {
             font-weight: 700; /* font-bold */
             color: #1f2937; /* text-gray-900 */
-        }
-        .terms-content section {
-             margin-bottom: 1.5rem; /* 各セクション間のマージン */
         }
     </style>
     <!-- ===== 修正ここまで ===== -->
@@ -112,60 +58,63 @@
     </header>
 
     <main class="container mx-auto px-6 py-16">
+        <!-- ===== 修正箇所 (Tailwindクラスを直接付与) ===== -->
         <div class="terms-content">
-            <h1>QcDa Project 利用規約</h1>
+            <h1 class="text-3xl font-bold text-gray-900 mb-8 pb-2 border-b">QcDa Project 利用規約</h1>
 
-            <section>
-                <h2>第1章 総則</h2>
+            <section class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-1 border-b">第1章 総則</h2>
 
-                <h3>第1条（本規約の適用）</h3>
-                <ol>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">第1条（本規約の適用）</h3>
+                <ol class="list-decimal list-inside pl-4 space-y-2">
                     <li>本利用規約（以下「本規約」という）は、QcDa Project（以下「当プロジェクト」という）が提供する全てのウェブアプリケーション、サービス、およびそれに関連する一切のサービス（以下、総称して「本サービス」という）の利用に関する条件を、本サービスを利用する全ての利用者（以下「利用者」という）と当プロジェクトとの間で定めるものです。</li>
                     <li>利用者は、本サービスを利用する前に本規約を全て確認し、その内容に同意するものとします。</li>
                     <li>本サービスの利用を開始した時点で、利用者は本規約に有効かつ取消不能な同意をしたものとみなされます。</li>
                 </ol>
 
-                <h3>第2条（本規約の変更）</h3>
-                <ol>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">第2条（本規約の変更）</h3>
+                <ol class="list-decimal list-inside pl-4 space-y-2">
                     <li>当プロジェクトは、法令の改正、本サービスの変更またはその他の必要性に応じて、利用者の事前の承諾を得ることなく、いつでも本規約を変更できるものとします。</li>
                     <li>本規約を変更する場合、当プロジェクトは、変更後の規約を当プロジェクトのウェブサイト上に掲載、または本サービス内の適切な箇所に表示することで利用者に通知するものとし、当該通知をもって変更後の規約は効力を生じるものとします。</li>
                     <li>利用者が本規約の変更後も本サービスの利用を継続した場合、変更後の本規約に同意したものとみなされます。</li>
                 </ol>
 
-                <h3>第3条（定義）</h3>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">第3条（定義）</h3>
                 <p>本規約において、次の各号に掲げる用語の意義は、当該各号に定めるところによるものとします。</p>
-                <ol>
+                <ol class="list-decimal list-inside pl-4 space-y-2">
                     <li><strong>「本サービス」</strong>：当プロジェクトが提供する「EveKuru [イベクル]」、「よくある質問・相談さん」、「就活しぇありんく」、「わりっぱ」、「ドライブくじ」等、および将来提供される一切のウェブアプリケーションおよび関連サービスを指します。</li>
                     <li><strong>「利用者」</strong>：本サービスを利用する個人または法人を指します。</li>
                     <li><strong>「ユーザーコンテンツ」</strong>：利用者が本サービスにアップロード、投稿、または送信した全ての情報（テキスト、画像、データ、名前、質問内容など）を指します。</li>
                 </ol>
             </section>
 
-            <section>
-                <h2>第2章 本サービスの利用</h2>
+            <section class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-1 border-b">第2章 本サービスの利用</h2>
 
-                <h3>第4条（利用者の責任）</h3>
-                <ol>
-                    <li>利用者は、本規約、関連法令、および当プロジェクトが別途定めるガイドラインを遵守し、自己の費用と責任において本サービスを利用するものとします。</li>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">第4条（利用者の責任）</h3>
+                <ol class="list-decimal list-inside pl-4 space-y-2">
+                    <!-- ===== 修正箇所 ===== -->
+                    <li>利用者は、本規約、関連法令、および当プロジェクトが別途定める<a href="community-guidelines.html" target="_top" class="text-blue-600 hover:underline">コミュニティガイドライン</a>を遵守し、自己の費用と責任において本サービスを利用するものとします。</li>
+                    <!-- ===== 修正ここまで ===== -->
                     <li>利用者は、本サービスの利用にあたり、自己の行為、およびその結果について一切の責任を負うものとします。</li>
                 </ol>
 
-                <h3>第5条（アカウント管理）</h3>
-                <ol>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">第5条（アカウント管理）</h3>
+                <ol class="list-decimal list-inside pl-4 space-y-2">
                     <li>一部の本サービス（例：「就活しぇありんく」、「EveKuru」）では、Googleアカウント等の外部サービス連携を通じた認証を求める場合があります。利用者は、自己の責任においてアカウント情報を厳重に管理するものとします。</li>
                     <li>アカウント情報が第三者に利用されたことによって生じた損害について、当プロジェクトに故意または重大な過失がある場合を除き、当プロジェクトは一切の責任を負いません。</li>
                 </ol>
 
-                <h3>第6条（ユーザーコンテンツの取り扱い）</h3>
-                <ol>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">第6条（ユーザーコンテンツの取り扱い）</h3>
+                <ol class="list-decimal list-inside pl-4 space-y-2">
                     <li>ユーザーコンテンツに関する著作権、その他一切の権利は、当該コンテンツを作成した利用者または正当な権利者に帰属します。</li>
                     <li>利用者は、当プロジェクトに対し、本サービスの運営、プロモーション、改善に必要な範囲内で、ユーザーコンテンツを無償で利用（複製、公衆送信、翻案等を含む）する非独占的なライセンスを許諾するものとします。</li>
                     <li>当プロジェクトは、本サービスの運営上必要と判断した場合、利用者に事前に通知することなく、ユーザーコンテンツを削除、非公開化、または編集できるものとします。</li>
                 </ol>
 
-                <h3>第7条（禁止事項）</h3>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">第7条（禁止事項）</h3>
                 <p>利用者は、本サービスの利用にあたり、以下の行為を行ってはならないものとします。</p>
-                <ol>
+                <ol class="list-decimal list-inside pl-4 space-y-2">
                     <li>法令または公序良俗に違反する行為。</li>
                     <li>当プロジェクトまたは第三者の著作権、商標権、その他の知的財産権を侵害する行為。</li>
                     <li>当プロジェクトまたは第三者の財産、プライバシー、名誉、信用等を侵害する行為。</li>
@@ -177,11 +126,11 @@
                 </ol>
             </section>
 
-            <section>
-                <h2>第3章 免責事項および権利帰属</h2>
+            <section class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-1 border-b">第3章 免責事項および権利帰属</h2>
 
-                <h3>第8条（免責事項）</h3>
-                <ol>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">第8条（免責事項）</h3>
+                <ol class="list-decimal list-inside pl-4 space-y-2">
                     <li><strong>本サービスの提供形態について</strong>：本サービスは、現状有姿（AS IS）で提供されるものであり、当プロジェクトは、本サービスの完全性、正確性、特定の目的への適合性、有用性、および継続性について、いかなる保証も行いません。</li>
                     <li><strong>外部サービスとの連携</strong>：本サービスは、Google Apps Script (GAS)、Googleスプレッドシート、Firebase、GitHub Pages等の<strong>外部サービスに大きく依存</strong>して提供されています。これらの外部サービスの仕様変更、サービス停止、不具合等により、本サービスの全部または一部が利用できなくなった場合でも、当プロジェクトは一切の責任を負いません。</li>
                     <li><strong>データ消失</strong>：当プロジェクトは、本サービスの利用に伴うデータ消失、破損等について、復旧義務および一切の責任を負いません。</li>
@@ -190,51 +139,53 @@
                     <li><strong>損害賠償</strong>：当プロジェクトは、本サービスの利用により利用者に生じたあらゆる損害について、当プロジェクトに故意または重大な過失がある場合を除き、一切の責任を負いません。また、損害賠償責任を負う場合でも、賠償額は利用者が過去1ヶ月間に当プロジェクトに支払った対価の総額を上限とします（本サービスは原則無償提供のため、実質的な賠償額は零円となることを含む）。</li>
                 </ol>
 
-                <h3>第9条（知的財産権）</h3>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">第9条（知的財産権）</h3>
                 <p>本サービスを構成する全ての情報、デザイン、ロゴ、ソフトウェア等（ユーザーコンテンツを除く）に関する知的財産権およびその他一切の権利は、当プロジェクトまたは当プロジェクトにライセンスを許諾している第三者に帰属します。</p>
             </section>
 
-            <section>
-                <h2>第4章 サービスの停止・終了等</h2>
+            <section class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-1 border-b">第4章 サービスの停止・終了等</h2>
 
-                <h3>第10条（本サービスの停止）</h3>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">第10条（本サービスの停止）</h3>
                 <p>当プロジェクトは、以下のいずれかの事由があると判断した場合、利用者に事前に通知することなく、本サービスの全部または一部の提供を停止または中断できるものとします。</p>
-                <ol>
+                <ol class="list-decimal list-inside pl-4 space-y-2">
                     <li>本サービスに係るコンピュータシステムの保守点検または更新を行う場合。</li>
                     <li>地震、落雷、火災、停電または天災などの不可抗力により、本サービスの提供が困難となった場合。</li>
                     <li>利用している外部サービス（Googleサービス等）が停止または終了した場合。</li>
                     <li>その他、当プロジェクトが本サービスの提供が困難と判断した場合。</li>
                 </ol>
 
-                <h3>第11条（本サービスの終了）</h3>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">第11条（本サービスの終了）</h3>
                 <p>当プロジェクトは、任意の理由により、30日間の予告期間をもって本サービスの提供を終了できるものとします。</p>
             </section>
 
-            <section>
-                <h2>第5章 その他</h2>
+            <section class="mb-6">
+                <h2 class="text-2xl font-bold text-gray-800 mt-10 mb-4 pb-1 border-b">第5章 その他</h2>
 
-                <h3>第12条（準拠法および管轄裁判所）</h3>
-                <ol>
+                <h3 class="text-xl font-semibold text-gray-800 mt-6 mb-3">第12条（準拠法および管轄裁判所）</h3>
+                <ol class="list-decimal list-inside pl-4 space-y-2">
                     <li>本規約の解釈にあたっては、日本法を準拠法とします。</li>
                     <li>本サービスに関して紛争が生じた場合には、当プロジェクトの所在地を管轄する裁判所を専属的合意管轄とします。</li>
                 </ol>
             </section>
 
             <section class="mt-12 pt-6 border-t border-gray-200">
-                <h4 class="text-md font-semibold text-gray-700 mb-2">附則</h4>
+                <h4 class="text-lg font-semibold text-gray-700 mt-6 mb-2">附則</h4>
                 <p class="text-sm text-gray-600">
                     2025年10月30日 制定<br>
                     © 2025 QcDa Project. All Rights Reserved.
                 </p>
             </section>
-
         </div>
+        <!-- ===== 修正ここまで ===== -->
     </main>
 
     <footer class="bg-gray-800 text-white mt-16">
         <div class="container mx-auto px-6 py-8 text-center">
-            <!-- このページ自体が利用規約なので、フッターのリンクは削除またはトップへのリンクに変更しても良いですが、統一性のために残します -->
-            <a href="terms-of-service.html" target="_top" class="text-gray-400 hover:text-white hover:underline text-sm mb-4 block">利用規約</a>
+            <!-- ===== 修正箇所 ===== -->
+            <a href="terms-of-service.html" target="_top" class="text-gray-400 hover:text-white hover:underline text-sm mb-2 block">利用規約</a>
+            <a href="community-guidelines.html" target="_top" class="text-gray-400 hover:text-white hover:underline text-sm mb-4 block">コミュニティガイドライン</a>
+            <!-- ===== 修正ここまで ===== -->
             <p class="text-gray-500 text-sm">&copy; 2025 QcDa Project. All Rights Reserved.</p>
         </div>
     </footer>
