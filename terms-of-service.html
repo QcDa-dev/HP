@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QcDa Project - 日常を便利にするウェブアプリ開発</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="QcDa Projectは、日常のちょっとした課題を解決し、生活を少しだけ便利にするためのウェブアプリを制作・公開しているプロジェクトです。">
+    <meta name="keywords" content="QcDa, ウェブアプリ, 業務効率化, イベント管理, FAQ, 割り勘, 就活, ドライブくじ">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://qcda-dev.github.io/HP/">
+    <meta property="og:title" content="QcDa Project - 日常を便利にするウェブアプリ開発">
+    <meta property="og:description" content="日常のちょっとした課題を解決し、生活を少しだけ便利にするためのウェブアプリを制作・公開しているプロジェクトです。">
+    <meta property="og:image" content="https://qcda-dev.github.io/HP/og-image.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://qcda-dev.github.io/HP/">
+    <meta property="twitter:title" content="QcDa Project - 日常を便利にするウェブアプリ開発">
+    <meta property="twitter:description" content="日常のちょっとした課題を解決し、生活を少しだけ便利にするためのウェブアプリを制作・公開しているプロジェクトです。">
+    <meta property="twitter:image" content="https://qcda-dev.github.io/HP/og-image.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-gray-900">QcDa Project</a>
+            <div class="hidden md:flex space-x-8 items-center">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition">QcDaについて</a>
+                <a href="#apps" class="text-gray-600 hover:text-blue-600 transition">公開アプリ</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">お問い合わせ</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-btn" type="button" class="text-gray-600 hover:text-gray-900 focus:outline-none">
+                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#about" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">QcDaについて</a>
+            <a href="#apps" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">公開アプリ</a>
+            <a href="#contact" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">お問い合わせ</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section id="hero" class="bg-white">
+            <div class="container mx-auto px-6 py-24 text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">日常の「ちょっと不便」を、<br class="md:hidden"><span class="text-blue-600">アプリ</span>で解決。</h1>
+                <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">QcDa Projectは、あなたの毎日を少しだけ便利にするためのウェブアプリを企画・開発しています。</p>
+                <a href="#apps" class="mt-8 inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">アプリ一覧を見る</a>
+            </div>
+        </section>
+
+        <!-- QcDaについて -->
+        <section id="about" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">QcDa Projectについて</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-12"></div>
+                <div class="max-w-4xl mx-auto text-center">
+                    <p class="text-lg text-gray-700 mb-4">
+                        正式名称は、<strong class="font-semibold">"Quest for Creative Development & Applications"</strong>。<br>
+                        私たちのミッションは、日常に潜むささいな課題を見つけ出し、シンプルで直感的に使えるウェブアプリを通じて、より快適な生活を提供することです。
+                    </p>
+                    <p class="text-gray-600">
+                        イベント運営の効率化から、友人との割り勘計算まで。幅広いシーンで「あったらいいな」を形にしています。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 公開アプリ -->
+        <section id="apps" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-4 text-gray-900">公開中のアプリ</h2>
+                <div class="w-24 h-1 bg-blue-600 mx-auto mb-12"></div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    
+                    <!-- EveKuru -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-8 flex-grow">
+                            <div class="flex items-center mb-4">
+                                <div class="p-3 bg-green-100 rounded-full mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z" /></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">EveKuru [イベクル]</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">イベント運営をスマートにするQRコード会員証発行アプリ。参加者管理の手間を大幅に削減します。</p>
+                        </div>
+                        <div class="p-6 bg-gray-50">
+                            <a href="evekuru.html" class="font-bold text-green-500 hover:text-green-700 transition duration-300">詳細はこちら &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- よくある質問・相談さん -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-8 flex-grow">
+                            <div class="flex items-center mb-4">
+                                <div class="p-3 bg-teal-100 rounded-full mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">よくある質問・相談さん</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">誰でも簡単に作成・管理ができるFAQシステム。タグ機能で情報の整理も簡単です。</p>
+                        </div>
+                        <div class="p-6 bg-gray-50">
+                            <a href="faq-san.html" class="font-bold text-teal-500 hover:text-teal-700 transition duration-300">詳細はこちら &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- 就活しぇありんく -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-8 flex-grow">
+                            <div class="flex items-center mb-4">
+                                <div class="p-3 bg-indigo-100 rounded-full mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-indigo-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">就活しぇありんく</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">就活生同士がリアルな企業情報を共有できるプラットフォーム。みんなで協力して就活を乗り切りましょう。</p>
+                        </div>
+                        <div class="p-6 bg-gray-50">
+                            <a href="sharelink.html" class="font-bold text-indigo-500 hover:text-indigo-700 transition duration-300">詳細はこちら &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- わりっぱ -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-8 flex-grow">
+                            <div class="flex items-center mb-4">
+                                <div class="p-3 bg-orange-100 rounded-full mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-orange-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" /></svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">わりっぱ</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">飲み会などで面倒な割り勘計算をストレスなく行えるアプリ。飲んだ量に応じた公平な計算も可能です。</p>
+                        </div>
+                        <div class="p-6 bg-gray-50">
+                            <a href="warippa.html" class="font-bold text-orange-500 hover:text-orange-700 transition duration-300">詳細はこちら &rarr;</a>
+                        </div>
+                    </div>
+
+                    <!-- ドライブくじ -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                        <div class="p-8 flex-grow">
+                            <div class="flex items-center mb-4">
+                                <div class="p-3 bg-red-100 rounded-full mr-4">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 18L12 18" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 6L12 6" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 12L6 12" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M18 12L18 12" />
+                                    </svg>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900">ドライブくじ</h3>
+                            </div>
+                            <p class="text-gray-600 mb-4">ドライブや旅行の際の面倒な座席決めを、簡単かつ公平に行うためのWebアプリです。</p>
+                        </div>
+                        <div class="p-6 bg-gray-50">
+                            <a href="drive-kuji.html" class="font-bold text-red-500 hover:text-red-700 transition duration-300">詳細はこちら &rarr;</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせ -->
+        <section id="contact" class="py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold mb-4 text-gray-900">お問い合わせ</h2>
+                <p class="text-gray-700 max-w-2xl mx-auto mb-8">
+                    QcDa Projectのアプリ利用に関するお申し込み、その他ご質問やご相談は、以下のGoogleフォームまたはメールアドレスまでお気軽にご連絡ください。
+                </p>
+                <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlvIr5ehyy3dInl_XTkA5F64H7yFIigL2dzFW0IoXnl8ajdw/viewform?usp=sharing&ouid=103863843545359943443" target="_blank" rel="noopener noreferrer" class="inline-block bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-blue-700 transition-transform transform hover:scale-105 duration-300">
+                        お問い合わせフォーム
+                    </a>
+                    <p class="text-gray-600">または qcda.app@gmail.com</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white">
+        <!-- ===== フッター修正箇所 ===== -->
+        <div class="container mx-auto px-6 py-8 text-center">
+            <a href="terms-of-service.html" class="text-gray-400 hover:text-white hover:underline text-sm mb-4 block">利用規約</a>
+            <p class="text-gray-500 text-sm">&copy; 2025 QcDa Project. All Rights Reserved.</p>
+        </div>
+        <!-- ===== 修正ここまで ===== -->
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuBtn = document.getElementById('menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            
+            menuBtn.addEventListener('click', function () {
+                mobileMenu.classList.toggle('hidden');
+            });
+
+            // メニュー内のリンクをクリックしたときにメニューを閉じる
+            const menuLinks = mobileMenu.getElementsByTagName('a');
+            for (let i = 0; i < menuLinks.length; i++) {
+                menuLinks[i].addEventListener('click', function() {
+                    mobileMenu.classList.add('hidden');
+                });
+            }
+        });
+    </script>
+    
+    <!-- JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "QcDa Project",
+      "url": "https://qcda-dev.github.io/HP/",
+      "logo": "https://qcda-dev.github.io/HP/logo.png",
+      "description": "QcDa Projectは、日常のちょっとした課題を解決し、生活を少しだけ便利にするためのウェブアプリを制作・公開しているプロジェクトです。"
+    }
+    </script>
+
+</body>
+</html>
