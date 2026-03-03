@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ja" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>みんなで〇〇王！ - 主役が喜ぶクイズ大会アプリ | QcDa Project</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="「みんなで〇〇王！」は、特定の人物（主役）の趣味嗜好やエピソードに関するクイズを出題し、理解度を競うパーティー向けWEBアプリです。主催者もプレイヤーとして参加できる画期的なシステムを搭載しています。">
+    <meta name="keywords" content="みんなで〇〇王！, クイズ, パーティーゲーム, レクリエーション, アプリ, QcDa Project">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://qcda-dev.github.io/HP/quiz-king.html">
+    <meta property="og:title" content="みんなで〇〇王！ - 主役が喜ぶクイズ大会アプリ | QcDa Project">
+    <meta property="og:description" content="主役のクイズを出題して理解度を競うパーティーアプリ。自動出題システムにより、主催者も一緒に楽しめます。">
+    <meta property="og:image" content="https://qcda-dev.github.io/HP/og-image-quizking.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://qcda-dev.github.io/HP/quiz-king.html">
+    <meta property="twitter:title" content="みんなで〇〇王！ - 主役が喜ぶクイズ大会アプリ | QcDa Project">
+    <meta property="twitter:description" content="主役のクイズを出題して理解度を競うパーティーアプリ。自動出題システムにより、主催者も一緒に楽しめます。">
+    <meta property="twitter:image" content="https://qcda-dev.github.io/HP/og-image-quizking.png">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans JP', sans-serif; }
+        .step-card { @apply bg-white p-6 rounded-xl shadow-md border border-gray-200; }
+        .step-number { @apply flex-shrink-0 bg-yellow-500 text-white w-10 h-10 rounded-full flex items-center justify-center font-bold text-lg; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="text-xl font-bold text-gray-900">
+                &larr; QcDa Project トップへ戻る
+            </a>
+        </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-16">
+        <!-- アプリ概要 -->
+        <section class="text-center mb-16">
+            <div class="inline-block p-4 bg-yellow-100 rounded-full mb-4">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-yellow-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2 17L3 7l4 4 5-8 5 8 4-4 1 10H2z" />
+                </svg>
+            </div>
+            <h1 class="text-4xl font-bold text-gray-900">みんなで〇〇王！</h1>
+            <p class="mt-2 text-lg text-gray-600">主役が一番喜ぶ、究極のクイズ大会アプリ</p>
+             <!-- アプリへのリンクボタン -->
+            <div class="mt-8">
+                <a href="https://qcda-dev.github.io/quiz-king/index.html" target="_blank" rel="noopener noreferrer" class="inline-block bg-yellow-500 text-white font-bold py-3 px-8 rounded-lg shadow-lg hover:bg-yellow-600 transition-transform transform hover:scale-105 duration-300">
+                    アプリを使ってみる
+                </a>
+            </div>
+        </section>
+
+        <!-- 特徴 -->
+        <section class="mb-16">
+            <h2 class="text-2xl font-bold text-center mb-8">特徴</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">主催者も遊べる！</h3>
+                    <p class="text-sm text-gray-600">事前に問題を自動生成し、主役の回答を隠しておくことで、企画・進行役も一緒にプレイヤーとしてクイズに参加できます。</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">スマホで簡単参加</h3>
+                    <p class="text-sm text-gray-600">プロジェクターやテレビでゲーム画面を映し、参加者は自分のスマホからQRコードを読み取って解答を送信するだけ。</p>
+                </div>
+                <div class="text-center p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="font-bold text-lg mb-2">盛り上がる演出</h3>
+                    <p class="text-sm text-gray-600">結果は自動で集計され、テレビ番組のようなランキング発表演出でイベントが最高潮に盛り上がります！</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 使い方ガイド -->
+        <section>
+            <h2 class="text-2xl font-bold text-center mb-8">使い方ガイド（概要）</h2>
+            <div class="max-w-2xl mx-auto space-y-6">
+                <div class="step-card flex items-start space-x-4">
+                    <div class="step-number">1</div>
+                    <div>
+                        <h4 class="font-bold">プロジェクト作成（主催者）</h4>
+                        <p class="text-sm text-gray-600">トップページから新しいプロジェクトを作り、出題したいジャンルや問題数を選んでクイズを自動生成します。</p>
+                    </div>
+                </div>
+                <div class="step-card flex items-start space-x-4">
+                    <div class="step-number">2</div>
+                    <div>
+                        <h4 class="font-bold">主役への事前アンケート</h4>
+                        <p class="text-sm text-gray-600">発行された「回答用URL」を主役（〇〇王）に送り、イベント当日までに自分のクイズの"正解"を入力してもらいます。</p>
+                    </div>
+                </div>
+                <div class="step-card flex items-start space-x-4">
+                    <div class="step-number">3</div>
+                    <div>
+                        <h4 class="font-bold">当日の準備</h4>
+                        <p class="text-sm text-gray-600">イベント当日、大画面にゲーム画面を映し出します。参加者は画面上のQRコードをスマホで読み取ってゲームに参加します。</p>
+                    </div>
+                </div>
+                <div class="step-card flex items-start space-x-4">
+                    <div class="step-number">4</div>
+                    <div>
+                        <h4 class="font-bold">クイズ大会スタート！</h4>
+                        <p class="text-sm text-gray-600">主催者がスマホをリモコン代わりにして進行します。みんなの回答が出揃ったら、主役の正解発表と採点を行いましょう！</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white mt-16">
+        <div class="container mx-auto px-6 py-8 text-center">
+            <a href="terms-of-service.html" target="_blank" class="text-gray-400 hover:text-white hover:underline text-sm mr-4">利用規約</a>
+            <a href="community-guidelines.html" target="_blank" class="text-gray-400 hover:text-white hover:underline text-sm">コミュニティガイドライン</a>
+            <p class="text-gray-500 text-sm mt-2">&copy; 2025 QcDa Project. All Rights Reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "みんなで〇〇王！",
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Web",
+      "description": "「みんなで〇〇王！」は、主役に関するクイズを出題して理解度を競うパーティー向けWEBアプリです。",
+      "author": {
+        "@type": "Organization",
+        "name": "QcDa Project"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      }
+    }
+    </script>
+
+</body>
+</html>
