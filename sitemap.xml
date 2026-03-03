@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- トップページ -->
+    <url>
+        <loc>https://qcda-dev.github.io/HP/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- 各アプリの詳細ページ (HP側) -->
+    <url>
+        <loc>https://qcda-dev.github.io/HP/quiz-king.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://qcda-dev.github.io/HP/drive-kuji.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://qcda-dev.github.io/HP/warippa.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://qcda-dev.github.io/HP/evekuru.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://qcda-dev.github.io/HP/faq-san.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ガイドライン等 -->
+    <url>
+        <loc>https://qcda-dev.github.io/HP/terms-of-service.html</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+    <url>
+        <loc>https://qcda-dev.github.io/HP/community-guidelines.html</loc>
+        <changefreq>yearly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- 独立しているアプリ本体 (GitHub Pagesのもの) -->
+    <url>
+        <loc>https://qcda-dev.github.io/quiz-king/index.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://qcda-dev.github.io/drive-lottery/index.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://qcda-dev.github.io/Walippa/index.html</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+</urlset>
